@@ -3,6 +3,21 @@
 // Task 1: Remove duplicates from an array of contacts
 function removeDuplicates(arr) {
     // Implement your solution here
+
+    let arr = ["HP", "Lenovo",
+          "Dell", "HP", "Apple", "Lenovo"];
+
+function removeDuplicates(arr) {
+    let NewArr = [];
+    arr.forEach(element => {
+        if (!NewArr.includes(element)) {
+            NewArr.push(element);
+        }
+    });
+    return NewArr;
+}
+console.log(removeDuplicates(arr));
+
 }
 
 // Task 2: Merge two objects
