@@ -1,7 +1,6 @@
 // --- Section 1: Coding Tasks (40 points) ---
 
 // Task 1: Remove duplicates from an array of contacts
-function removeDuplicates(arr) {
     // Implement your solution here
 
     let arr = ["0793654635", "0793656578",
@@ -18,7 +17,6 @@ function removeDuplicates(arr) {
 }
 console.log(removeDuplicates(arr));
 
-}
 
 // Task 2: Merge two objects
 function mergeObjects(obj1, obj2) {
@@ -38,7 +36,6 @@ function mergeObjects(obj1, obj2) {
 // --- Section 2: Scenario-Based Questions (60 points) ---
 
 // Scenario 1: Debugging
-function incrementArray(arr) {
     // Implement your solution here
 
     function incrementArray(arr) {
@@ -58,7 +55,6 @@ function incrementArray(arr) {
     const arr = [1, 2, 3, 4];
     console.log(incrementArray(arr));
     
-}
 
 // Scenario 2: Closures
 function outer() {
@@ -85,13 +81,11 @@ console.log(counter()); // Output: 3
 // 3. Debouncing and Throttling
 // Debounce: Delays execution until no new events trigger.
 // Throttle: Limits execution to once every set interval.
-// Use: Applied in search inputs, scrolling, or window resizing.
+// Applied in search inputs, scrolling, or window resizing.
 
 
 // Scenario 4: Data Manipulation
-function getAdultNames(users) {
     // Implement your solution here
-
     function getAdultNames(users) {
         // Filter users who are 25 or older and map to their names
         return users
@@ -99,7 +93,6 @@ function getAdultNames(users) {
             .map(user => user.name);
     }
     
-    // Example usage:
     const users = [
         { name: 'Paivy', age: 18 },
         { name: 'Kimberly', age: 29 },
@@ -109,10 +102,8 @@ function getAdultNames(users) {
     
     console.log(getAdultNames(users)); // Output: ['Kimberly', 'Arthur']
     
-}
 
 // Scenario 5: Asynchronous Data Handling
-async function fetchUserPosts(apiUrl) {
     // Implement your solution here
     async function fetchUserPosts(apiUrl) {
         try {
@@ -132,11 +123,9 @@ async function fetchUserPosts(apiUrl) {
         .then(posts => console.log(posts)) // Handle successful data
         .catch(err => console.error(err)); // Handle any errors
     
-}
 
 
 // Scenario 6: Memoization
-function memoize(fn) {
     // Implement your solution here
     function memoize(fn) {
         const cache = {}; // Initialize an empty cache object
@@ -163,4 +152,3 @@ function memoize(fn) {
     console.log(memoizedFunction(5)); // Logs "Calculating..." and then "10"
     console.log(memoizedFunction(5)); // Returns cached result "10" without "Calculating..."
     
-}
