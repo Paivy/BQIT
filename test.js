@@ -3,19 +3,22 @@
 // Task 1: Remove duplicates from an array of contacts
     // Implement your solution here
 
+    
+    function removeDuplicates(arr) {
+        let NewArr = [];
+        arr.forEach(element => {
+            if (!NewArr.includes(element)) {
+                NewArr.push(element);
+            }
+        });
+        return NewArr;
+    }
+    
+    
+    let test_arr = ["0793654635", "0793656578",
+              "0793656347", "0793654635", "0793656564", "0793656578"];
 
-function removeDuplicates(arr) {
-    let arr = ["0793654635", "0793656578",
-          "0793656347", "0793654635", "0793656564", "0793656578"];
-    let NewArr = [];
-    arr.forEach(element => {
-        if (!NewArr.includes(element)) {
-            NewArr.push(element);
-        }
-    });
-    return NewArr;
-}
-console.log(removeDuplicates(arr));
+console.log(removeDuplicates(test_arr));
 
 
 // Task 2: Merge two objects
@@ -118,7 +121,7 @@ console.log(counter()); // Output: 3
             throw error; // Optionally rethrow error for further handling
         }
     }
-    const apiUrl = 'https://github.com/Paivy';
+    const apiUrl = 'https://api.zippopotam.us/us/33162';
     fetchUserPosts(apiUrl)
         .then(posts => console.log(posts)) // Handle successful data
         .catch(err => console.error(err)); // Handle any errors
