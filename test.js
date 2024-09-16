@@ -3,10 +3,10 @@
 // Task 1: Remove duplicates from an array of contacts
     // Implement your solution here
 
-    let arr = ["0793654635", "0793656578",
-          "0793656347", "0793654635", "0793656564", "0793656578"];
 
 function removeDuplicates(arr) {
+    let arr = ["0793654635", "0793656578",
+          "0793656347", "0793654635", "0793656564", "0793656578"];
     let NewArr = [];
     arr.forEach(element => {
         if (!NewArr.includes(element)) {
